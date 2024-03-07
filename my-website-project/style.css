@@ -1,25 +1,52 @@
 /**CSS info from https://www.tipsandtricks-hq.com/simple-table-of-contents-toc-using-pure-html-and-css-code-9217**/
 #toc_container {
-    background: #f9f9f9 none repeat scroll 0 0;
-    border: 5px solid #aaa;
+    background: rgb(255, 255, 255) none repeat scroll 0 0;
+    border: 5px solid rgb(109, 49, 16);
     display: table;
     font-size: 100%;
-    margin-bottom: 0.5em;
-    padding: 5px;
+    margin-bottom: 1em;
+    padding: 10px;
     width: auto;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%
 }
 
 .toc_title {
     font-weight: 700;
     text-align: center;
+    color:rgb(109, 49, 16)
 }
 
 #toc_container li, #toc_container ul, #toc_container ul li{
     list-style: outside none none !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
 }
-.center {
+
+figure img {
     display: block;
     margin-left:auto;
     margin-right:auto;
-    width:50%
+}
+
+figure figcaption{
+    border: 2px solid rgb(109, 49, 16);
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(109, 49, 16);
+}
+
+.title {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    color:rgb(109, 49, 16);
+}
+
+a:link {
+color: rgb(109, 49, 16);
 }
