@@ -1,0 +1,25 @@
+/**CSS info from https://www.tipsandtricks-hq.com/simple-table-of-contents-toc-using-pure-html-and-css-code-9217**/
+#toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 5px solid #aaa;
+    display: table;
+    font-size: 100%;
+    margin-bottom: 0.5em;
+    padding: 5px;
+    width: auto;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
+}
+.center {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%
+}

@@ -1,63 +1,161 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <!--
         Erin M Chacon
         My First Webpage
         I didn't realize this was due today ahhhhhhh
+
+        TOC Coding help from  https://www.tipsandtricks-hq.com/simple-table-of-contents-toc-using-pure-html-and-css-code-9217
     -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Siamese Cats Physiology and Colors</title>
 </head>
-<body style="background-color:azure">
-    <h1>Siamese Cats, If You Please</h1>
-    <p>Originally a pet of Thailand royalty, the Siamese is now very popular today - regardless of social status. They are coveted for their affectionate nature, intelligence, and incessant need to chat. Not many cat breeds are as recognizable as a Siamese, and this is due to their very specific body type and coat pattern!</p>
-    <h2>Physiology</h2>
-    <img src="Physio.png" alt="drawing of average siamese cat's body shape" width="300px">
-    <p>This cat is long and lithe, with a very graceful appearance. All Siamese have bright blue eyes that are large and almond shaped. The ears are fairly large and placed on a wedge or apple shaped head, and the tail is very long and thin. Arguably, the most identifiable aspect of the Siamese is their two-toned coat.</p>
-    <h3>Coat Types</h3>
-    <p>The distinctive coat pattern is usually refered to as <strong>colorpoint</strong>. This pattern is the result of a mutation in melanin production, making the relating enzyme heat sensitive. In other words, the warmest parts of the cat's body are a light color, while the cooler extremeties such as ears, face, legs, and tail are darker.</p>
-    <p>While all Siamese have colorpoint coats, the actual colors do vary. There are seven coat colors, but only four of them are officially recognized as "Breed Standard." The other three patterns exist due to another cat breed being introduced into the gene pool, therefore not <em>purely</em> Siamese. However, outside of show situations, all coats are considered Siamese regardless.
-    </p>
-        <ul>
-            <li>Breed Standard Colors<br>
-                <ol>
-                    <li>Seal Point<br>
-                        <text>Most recognizable color pattern, with warm tan body and deep brown extremeties.</text><br>
-                        <img src="Seals.png" alt="Drawing demonstrating seal point coat color and markings." width="200px">
-                    </li>
-                    <li>Chocolate Point<br>
-                        <text>Very similar to seal point, differences being a lighter cream body and richer, chocolate brown extremeties.</text><br>
-                        <img src="Chocolate.png" alt="Drawing demonstrating chocolate point coat color and markings." width="200px">
-                    </li>
-                    <li>Blue Point<br>
-                        <text>"Blue" is a common term for the cool grey tones of the extremeties, with an exceptionally pale body.</text><br>
-                        <img src="Blue.png" alt="Drawing demonstrating blue point coat color and markings." width="200px">
-                    </li>
-                    <li>Lilac Point<br>
-                        <text>Similar to blue point, with a pale body and even lighter grey dusted over the extremeties.</text><br>
-                        <img src="Lilac.png" alt="Drawing demonstrating lilac point coat color and markings." width="200px">
+
+<body>
+    <header>
+        Altogether Too Much Information About Siamese Cats
+        <nav>
+            <div id="toc_container">
+                <p class="toc_title">Contents</p>
+                <ol class="toc_list">
+                    <li><a href="#Overview">Overview</a></li>
+                    <li><a href="#Physiology">Physiology</a></li>
+                    <li><a href="#Coat_Types">Coat Types</a>
+                        <ul>
+                            <li><a href="#Breed_Standard_Colors">Breed Standard Colors</a></li>
+                            <li><a href="#Other_Colors">Other Colors</a></li>
+                        </ul>
                     </li>
                 </ol>
-                <li>Other Colors<br>
-                <ol>                    
-                    <li>Flame Point<br>
-                    <text>Also known as "Orange Point." The body is a warm cream, and the extremeties are orange with stripes. This color was created by introducing a tabby cat into the breeding pool. Flame Points are also almost always male! The gene that produces orange coloring is on the X chromosome. Females need two copies of the gene to appear orange, while males only need one!</text><br>
-                    <img src="Flame.png" alt="Drawing demonstrating flame point coat color and markings." width="200px">
-                </li>
-                <li>Lynx Point<br>
-                    <text>Also known as "Tabby Point." The body is warm tan, and can sometimes be covered in liver-colored stripes. The extremeties are a dusty grey with dark brown to black stripes. Similar to the flame point, these markings are thanks to tabby genes being introduced to the breeding pool.</text><br>
-                    <img src="Lynx.png" alt="Drawing demonstrating lynx point coat color and markings." width="200px"><br> 
-                </li>
-                <li>Tortie Point<br>
-                    <text>Also known as "<strong>Extremely</strong> Rare." The body is anywhere from tan to cream, and the extremeties are mottled orange and brown or blue. This coat can only be achieved when an orange cat breeds with a purebred siamese cat that has one of the Standard Breed color coats. Not only that, but the resulting kitten <em>must</em> be female. As mentioned earlier, female cats need two copies of the orange gene to fully exhibit an orange coat. Tortie points are the result of one X chromosome carrying the orange gene, and the other X not. Technically, male tortie points do exist, but are <em>even more rare</em>. This is because they have two X chromosomes and one Y! </text><br>
-                    <img src="Tortie.png" alt="Drawing demonstrating Tortie point coat color and markings." width="200px">
-                </li>
-            </ol></li>
-        </ul>
-        <br>
-        <br>
-        <text style="color:darkblue"><small>Website by Erin Chacon, their lynx point Mona, and their very nosey bobtail Merlin (He is on their lap as they type this).</small></text>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1 id="Overview">Overview</h1>
+            <p>Originally a pet of Thailand royalty, the Siamese is now very popular today - regardless of social
+                status. They are coveted for their affectionate nature, intelligence, and incessant need to chat.
+                Not many cat breeds are as recognizable as a Siamese, and this is due to their very specific body
+                type and coat pattern!</p>
+            <section>
+                <h2 id="Physiology">Physiology</h2>
+                <figure>
+                    <img src="images/Physio.png" alt="drawing of average siamese cat's body shape" width="300" class="center">
+                </figure>
+                <p>This cat is long and lithe, with a very graceful appearance. All Siamese have bright blue eyes that
+                    are large and almond shaped. The ears are fairly large and placed on a wedge or apple shaped head,
+                    and the tail is very long and thin. Arguably, the most identifiable aspect of the Siamese is their
+                    two-toned coat.</p>
+            </section>
+            <section>
+                <h2 id="Coat_Types">Coat Types</h2>
+                <p>The distinctive coat pattern is usually refered to as <strong>colorpoint</strong>. This pattern is
+                    the result of a mutation in melanin production, making the relating enzyme heat sensitive. In other
+                    words, the warmest parts of the cat's body are a light color, while the cooler extremeties such as
+                    ears, face, legs, and tail are darker.</p>
+                <p>While all Siamese have colorpoint coats, the actual colors do vary. There are seven official coat
+                    colors.</p>
+                <section>
+                    <h3 id="Breed_Standard_Colors">Breed Standard Colors</h3>
+                    <p>Out of the seven coat colors, only four are recognized as "Breed Standard." Cats with these coats
+                        can be showed and officially papered due to the purity of their bloodlines. </p>
+                    <h4>Seal Point</h4>
+                    <figure>
+                        <img src="images/Seals.png" alt="Drawing demonstrating seal point coat color and markings."
+                            width="200" class="center">
+                        <figcaption>
+                            Most recognizable color pattern, with warm tan body and deep brown
+                            extremeties.
+                        </figcaption>
+                    </figure>
+
+                    <h4>Chocolate Point</h4>
+                    <figure>
+                        <img src="images/Chocolate.png"
+                            alt="Drawing demonstrating chocolate point coat color and markings." width="200" class="center">
+                        <figcaption>
+                            Very similar to seal point, differences being a lighter cream body and richer,
+                            chocolate brown extremeties.
+                        </figcaption>
+                    </figure>
+                    <h4>Blue Point</h4>
+                    <figure>
+                        <img src="images/Blue.png" alt="Drawing demonstrating blue point coat color and markings."
+                            width="200" class="center">
+                        <figcaption>
+                            "Blue" is a common term for the cool grey tones of the extremeties, with an
+                            exceptionally pale body.
+                        </figcaption>
+                    </figure>
+                    <h4>Lilac Point</h4>
+                    <figure>
+                        <img src="images/Lilac.png" alt="Drawing demonstrating lilac point coat color and markings."
+                            width="200" class="center">
+                        <figcaption>
+                            Similar to blue point, with a pale body and even lighter grey dusted over the
+                            extremeties.
+                        </figcaption>
+                    </figure>
+                </section>
+                <section>
+                    <h3 id="Other_Colors">Other Colors</h3>
+                    <p>The remaining coat colors are more recent in the breed's history. In order to achieve these
+                        colors, a different cat breed must be introduced into the gene pool. This fact excludes them
+                        from being officially recognized. However, outside of show situations and frankly bizarre
+                        elitism about cat eugenics, they are considered Siamese cats regardless. </p>
+
+                    <h4>Flame Point</h4>
+                    <figure>
+                        <img src="images/Flame.png" alt="Drawing demonstrating flame point coat color and markings."
+                            width="200" class="center">
+                        <figcaption>Also known as "Orange Point." The body is a warm cream, and the extremeties are
+                            orange with stripes. This color was created by introducing a tabby cat into the
+                            breeding pool. Flame Points are also almost always male! The gene that produces
+                            orange coloring is on the X chromosome. Females need two copies of the gene to
+                            appear orange, while males only need one!
+                        </figcaption>
+                    </figure>
+                    <h4>Lynx Point</h4>
+                    <figure>
+                        <img src="images/Lynx.png" alt="Drawing demonstrating lynx point coat color and markings."
+                            width="200" class="center">
+                        <figcaption>
+                            Also known as "Tabby Point." The body is warm tan, and can sometimes be covered in
+                            liver-colored stripes. The extremeties are a dusty grey with dark brown to black
+                            stripes. Similar to the flame point, these markings are thanks to tabby genes being
+                            introduced to the breeding pool.
+                        </figcaption>
+                    </figure>
+                    <h4>Tortie Point</h4>
+                    <figure>
+                        <img src="images/Tortie.png" alt="Drawing demonstrating Tortie point coat color and markings."
+                            width="200" class="center">
+                        <figcaption>
+                            Also known as "<strong>Extremely</strong> Rare." The body is anywhere from tan to
+                            cream, and the extremeties are mottled orange and brown or blue. This coat can only
+                            be achieved when an orange cat breeds with a purebred siamese cat that has one of
+                            the Standard Breed color coats. Not only that, but the resulting kitten
+                            <em>must</em> be female. As mentioned earlier, female cats need two copies of the
+                            orange gene to fully exhibit an orange coat. Tortie points are the result of one X
+                            chromosome carrying the orange gene, and the other X not. Technically, male tortie
+                            points do exist, but are <em>even more rare</em>. This is because they have two X
+                            chromosomes and one Y!
+                        </figcaption>
+                    </figure>
+                </section>
+            </section>
+            <br>
+            <br>
+        </article>
+    </main>
+    <footer>
+        <p><small>Website by Erin Chacon, their lynx point Mona, and their very nosey
+                bobtail Merlin (He is on their lap as they type this).</small></p>
+    </footer>
 </body>
+
 </html>
