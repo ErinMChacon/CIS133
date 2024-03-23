@@ -39,6 +39,9 @@ figure figcaption{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:rgb(109, 49, 16);
 }
+h1{
+    text-transform: uppercase;
+}
 
 .title {
     text-align: center;
@@ -49,4 +52,10 @@ figure figcaption{
 
 a:link {
 color: rgb(109, 49, 16);
+}
+body{
+    line-height: 1.5rem;
+}
+.site-intro{
+    font-size: larger;
 }
