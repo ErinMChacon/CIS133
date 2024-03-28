@@ -1,4 +1,10 @@
 /*modified code from w3schools*/
+footer a:link{
+    color:#ffdee4;
+}
+footer a:visited {
+    color:#d9b18e;
+}
 body {
     background-color:#ffdee4
 }
@@ -10,13 +16,19 @@ header {
 }
 footer {
     background-color: #544844;
-    width: 100%;
     color:#ffbac0;
+    margin: 1rem auto;
+    padding: 1rem;
+    position: relative;
     text-align: center;
+    width: 100%;
 }
 .container {
     position: relative;
     width: 50%;
+  }
+  .container2 {
+    text-align:center;
   }
   
   .image {
@@ -70,6 +82,8 @@ footer {
     width: auto;
   }*/
   .smicon{
-    float:left;
-    margin-right: 0.5rem;
+    display:inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: auto;
   }
