@@ -1,5 +1,5 @@
 /*modified code from w3schools*/
-body{
+body {
     background-color:#ffdee4
 }
 header {
@@ -58,6 +58,18 @@ footer {
   nav ul{
     list-style-type: none;
   }
-  p{
+  main p{
+    color:#544844;
     font-family:"Reddit Mono", Arial, monospace;
+  }
+  /*.smicon{
+    block-size: 2rem;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    width: auto;
+  }*/
+  .smicon{
+    float:left;
+    margin-right: 0.5rem;
   }
