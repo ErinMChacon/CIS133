@@ -87,3 +87,18 @@ footer {
     margin-bottom: 1rem;
     width: auto;
   }
+
+.navmenu {
+  background-color: #544844;
+  font-family:"Merriweather", Courier, serif;
+  overflow:hidden;
+}
+.navmenu a {
+  float:right;
+  font-size: 1rem;
+  color:#ffbac0;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-weight:600;
+}
