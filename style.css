@@ -1,4 +1,19 @@
 /*modified code from w3schools*/
+body{
+    background-color:#ffdee4
+}
+header {
+    background-color: #544844;
+    width: 100%;
+    color:#ffbac0;
+    text-align: center;
+}
+footer {
+    background-color: #544844;
+    width: 100%;
+    color:#ffbac0;
+    text-align: center;
+}
 .container {
     position: relative;
     width: 50%;
@@ -35,7 +50,13 @@
   .text {
     background-color: #544844;
     color: #ffbac0;
-    font-family: Merriweather, Courier, monospace;
+    font-family: "Merriweather", Courier, serif;
     font-size: 1rem;
     padding: 1rem 2rem;
+  }
+  nav ul{
+    list-style-type: none;
+  }
+  p{
+    font-family:"Reddit Mono", Arial, monospace;
   }

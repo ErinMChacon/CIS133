@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <!--
+    <!------------------------------------------------------------------
         HOME PAGE
         Erin Chacon, Final Project, MCC, CIS133DA, Spring 2024
-    -->
+    -------------------------------------------------------------------->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Erin Chacon, Designer & Maker of Things</title>
+    <!---------------------------------------------------------------------------------
+        Font information
+    ---------------------------------------------------------------------------------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <!-------------------------------------------------------------------------------------
+        Raw code for clickable containers and fade when hover image. Apply to nav
+        -----------------------------------------------------------------------------------
+        <div class="container">
         <img src="images/Balloon_Sofa.png" alt="fursona" class="image" style="width:100%">
-        <a href="about.html"></a><div class="middle">
-            <div class="text">Test</div>
+        <a href="about.html"><div class="middle">
+            <div class="text">About</div>
         </div>
         </a>
     </div>
+    --------------------------------------------------------------------------------------->
     <nav>
         <ul>
             <li>
                 <a href="index.html">Home</a>
             </li>
             <li>
-                <a href="about.html">About</a>
+                <div class="container">
+                    <img src="images/Balloon_Sofa.png" alt="fursona" class="image" style="width:100%">
+                    <a href="about.html"><div class="middle">
+                        <div class="text">About</div>
+                    </div>
+                    </a>
+                </div>
             </li>
             <li>
                 <a href="contact.html">Contact</a>
@@ -52,7 +68,12 @@
         <p>Stuff will go here</p>
     </main>
     <footer>
-        <small>Website by <a href="mailto:strawberrygearsart@gmail.com">Erin Chacon</a>, Strawberrygears Art &copy; 2024. Probably also putting social media links here</small>
+        <small>Website by <a href="mailto:strawberrygearsart@gmail.com">Erin Chacon</a>, Strawberrygears Art &copy; 2024.</small>
+        <!------------------------------------------------------------------------------------------------------------------------------------
+            Figuring out social media links here. Color overlay as well as center them. May have to make itty bitty boxes (containers?)
+            for each of them to live in so they can be in a row. Can also use this technique for header/nav images???
+        --------------------------------------------------------------------------------------------------------------------------------------->
+        <a href="https://www.instagram.com/strawberrygears/"><img src="images/instagramicon.png" alt="instagram icon" style="width:2rem"></a>
     </footer>
 </body>
 </html>
