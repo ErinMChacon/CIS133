@@ -49,6 +49,7 @@ footer {
   
   .text {
     background-color: #544844;
+    border-radius: 25px;
     color: #ffbac0;
     font-family: "Merriweather", Courier, serif;
     font-size: 1rem;
