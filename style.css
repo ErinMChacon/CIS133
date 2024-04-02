@@ -30,6 +30,11 @@ footer {
   .container2 {
     text-align:center;
   }
+  .gif {
+    display: block;
+    height: auto;
+    margin: auto;
+  }
   
   .image {
     opacity: 1;
