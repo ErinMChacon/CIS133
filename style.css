@@ -10,11 +10,10 @@ body {
     margin: 0;
     padding: 0;
     /************************************************************************************************
-    For homepage stuff in future!
-    *************************************************************************************************
-    background-image: url('images/webpagebg.png');
-    background-attachment: fixed;
-    background-size: 100%;*/
+    For homepage stuff in future! In notes here to see if it displays better in main.
+    ************************************************************************************************/
+    /*background-image: url('images/webpagebg.png');
+    background-size:cover;*/
 }
 header {
     background-color: #544844;
@@ -43,7 +42,7 @@ footer {
   .gif {
     display: block;
     height: auto;
-    margin: auto;
+    margin: 2rem auto 0;
   }
   
   .image {
@@ -85,6 +84,14 @@ footer {
   nav ul{
     list-style-type: none;
   }
+  main {
+    background-image: url('images/webpagebg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
   main p{
     color:#544844;
     font-family:"Reddit Mono", Arial, monospace;
