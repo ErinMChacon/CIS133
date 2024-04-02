@@ -6,13 +6,23 @@ footer a:visited {
     color:#d9b18e;
 }
 body {
-    background-color:#ffdee4
+    background-color:#ffdee4;
+    margin: 0;
+    padding: 0;
+    /************************************************************************************************
+    For homepage stuff in future!
+    *************************************************************************************************
+    background-image: url('images/webpagebg.png');
+    background-attachment: fixed;
+    background-size: 100%;*/
 }
 header {
     background-color: #544844;
-    width: 100%;
     color:#ffbac0;
+    margin: 0;
+    padding: 0;
     text-align: center;
+    width: 100%;
 }
 footer {
     background-color: #544844;
