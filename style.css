@@ -1,4 +1,7 @@
 /*modified code from w3schools*/
+*{
+  box-sizing: border-box;
+}
 footer a:link{
     color:#ffdee4;
 }
@@ -85,12 +88,14 @@ footer {
     list-style-type: none;
   }
   main {
+    /*Only for homepage right now!
     background-image: url('images/webpagebg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
     padding: 0;
+    */
 }
   main p{
     color:#544844;
@@ -124,3 +129,27 @@ footer {
   text-decoration: none;
   font-weight:600;
 }
+/**************************For About Page*********************************************************/
+
+/*************************************************************************************************/
+/**************************For Contact Form*******************************************************/
+form ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-family: "Merriweather", Courier, serif;
+  color:#544844
+}
+label {
+  display: inline-block;
+  min-width: 90px;
+  text-align: right;
+}
+input,
+textarea {
+  border: 3px solid #544844;
+  margin: .5rem;
+  width: 300px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+/*************************************************************************************************/
