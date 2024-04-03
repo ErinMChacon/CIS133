@@ -96,6 +96,7 @@ footer {
     margin: 0;
     padding: 0;
     */
+    text-align: center;
 }
   main p{
     color:#544844;
@@ -109,7 +110,7 @@ footer {
     width: auto;
   }*/
   .smicon{
-    display:inline-block;
+    display: inline-block;
     margin-top: 1rem;
     margin-bottom: 1rem;
     width: auto;
@@ -133,15 +134,30 @@ footer {
 
 /*************************************************************************************************/
 /**************************For Contact Form*******************************************************/
+form {
+  display:inline-block;
+  width: auto;
+  text-align: center;
+}
 form ul {
   list-style-type: none;
   padding-left: 0;
   font-family: "Merriweather", Courier, serif;
   color:#544844
 }
+form li {
+  list-style: none;
+  margin: auto;
+  padding: 1rem;
+  background-image: url("images/BrownPointy_Stampright.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 2.5rem;
+}
 label {
   display: inline-block;
   min-width: 90px;
+  height: auto;
   text-align: right;
 }
 input,
@@ -151,5 +167,9 @@ textarea {
   width: 300px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
+}
+.form_button {
+  padding: .5rem;
+  margin-bottom: 2rem;
 }
 /*************************************************************************************************/
