@@ -84,9 +84,6 @@ footer {
     font-size: 1rem;
     padding: 1rem 2rem;
   }
-  nav ul{
-    list-style-type: none;
-  }
   main {
     /*Only for homepage right now!
     background-image: url('images/webpagebg.png');
@@ -130,6 +127,51 @@ footer {
   text-decoration: none;
   font-weight:600;
 }
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+.dropdown .dropbutton {
+  font-size: 1rem;
+  font-weight:600;
+  border: none;
+  outline: none;
+  color: #ffbac0;
+  padding: 1rem;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navmenu a:hover, .dropdown:hover .dropbutton {
+  background-color:#ffbac0;
+  color:#544844;
+  border-radius: 25px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffbac0;
+  min-width: 10rem;
+  box-shadow: 0 .5rem 1rem 0 regba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: #544844;
+  padding: 1rem;
+  margin: 1.5rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #544844;
+  color: #ffbac0;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 /**************************For About Page*********************************************************/
 
 /*************************************************************************************************/

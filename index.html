@@ -24,54 +24,26 @@ contact, and project pages with set style.
     <!-------------------------------------------------------------------------------------
         Raw code for clickable containers and fade when hover image. Apply to nav
         -----------------------------------------------------------------------------------
-        <div class="container">
-        <img src="images/Balloon_Sofa.png" alt="fursona" class="image" style="width:100%">
-        <a href="about.html"><div class="middle">
-            <div class="text">About</div>
-        </div>
-        </a>
-    </div>
     --------------------------------------------------------------------------------------->
         <!-- Temporarily moved header back. Can't decide if nav will be separate from icon
             nav or not, specifically on first page
         -->
     <!--dropdown nav test---------------------------------------------------------->
-    <div class="navmenu">
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <!--Might still add a dropdown for projects. Include art and html work-->
-        <a href="index.html">Home</a>
-    </div>
     <nav>
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <div class="container">
-                    <img src="images/Balloon_Sofa.png" alt="fursona" class="image" style="width:100%">
-                    <a href="about.html"><div class="middle">
-                        <div class="text">About</div>
-                    </div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-            <li>
-                <a href="projects.html">Projects</a>
-                <ul>
-                        <li>
-                            <a href="article.html">Articles</a>
-                        </li>
-                        <li>
-                            <a href="badges.html">Badges</a>
-                        </li>
-                </ul>
-            </li>
-        </ul>
+        <div class="navmenu">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <div class="dropdown">
+                <button class="dropbutton">Projects
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="art.html">Art</a>
+                <a href="webdev.html">Web Design</a>
+        </div>
+    </div>
+        </div>
     </nav>
     <header>
         <!--Images go here usually-->
@@ -79,6 +51,34 @@ contact, and project pages with set style.
         <p class="tagline">Put tagline here</p>
     </header>
     <main>
+        <div class="container">
+            <img src="images/photo.png" alt="photo of artist" class="image" style="width:100%">
+            <a href="about.html"><div class="middle">
+                <div class="text">About</div>
+            </div>
+            </a>
+        </div>
+        <div class="container">
+            <img src="images/phone.png" alt="vintage telephone" class="image" style="width:100%">
+            <a href="contact.html"><div class="middle">
+                <div class="text">Contact</div>
+            </div>
+            </a>
+        </div>
+        <div class="container">
+            <img src="images/cert.png" alt="web dev fake certification" class="image" style="width:100%">
+            <a href="projects.html"><div class="middle">
+                <div class="text">Web Design</div>
+            </div>
+            </a>
+        </div>
+        <div class="container">
+            <img src="images/drawing.png" alt="drawing of fursona" class="image" style="width:100%">
+            <a href="projects.html"><div class="middle">
+                <div class="text">Artwork</div>
+            </div>
+            </a>
+        </div>
         <!--Content. Commented out gif to work on form and other things. It will load quicker in meantime.
         -------------------------------------------------------------------------------------------------->
         <!--<p>Stuff will go here. So far, it's just a gif and a background image that needs adjusting! Neat! At least it's displaying!</p>
