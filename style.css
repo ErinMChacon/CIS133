@@ -17,11 +17,11 @@ body {
 }
 .home-page {
   background-image: url('images/webpagebg.png');
-    background-position: bottom;
-    background-size: 100%;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
-    padding: 0;
+    padding-top: 0;
     text-align: center;
 }
 .contact-page {
@@ -46,31 +46,34 @@ header {
 footer {
     background-color: #544844;
     color:#ffbac0;
-    padding: 1rem;
+    padding: 2.5rem;
     text-align: center;
-    width: auto;
+    width: 100%;
+    margin: auto;
 }
 /*container possibly can be renamed and reapplied to each individual image? not sure
 if it would break the code or not though!!*/
 .container {
-  float: left;
+  display: inline-block;
+  padding: 1rem;
   position: relative;
-  width: 50%;
   }
 .container2 {
     text-align:center;
     position: relative;
   }
   .gif {
-    display: block;
-    height: auto;
-    margin: auto;
+    display: inline-block;
+    position: relative;
+    top: 10rem;
+    right: 10rem;
   }
-  
   .image {
     opacity: 1;
     display: inline-block;
-    width: auto;
+    padding: 1rem;
+    position: relative;
+    width: 25%;
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
@@ -103,17 +106,7 @@ if it would break the code or not though!!*/
     font-size: 1rem;
     padding: 1rem 2rem;
   }
-  main {
-    /*Only for homepage right now!
-    background-image: url('images/webpagebg.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    text-align: center;*/
-    padding: 3rem;
-}
+
   main p{
     color:#544844;
     font-family:"Reddit Mono", Arial, monospace;
@@ -183,14 +176,6 @@ if it would break the code or not though!!*/
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.gif {
-  display:block;
-  width: 100%;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border: 0;
-}
-
 /**************************For About Page*********************************************************/
 
 /*************************************************************************************************/
