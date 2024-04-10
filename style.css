@@ -1,19 +1,13 @@
 /*modified code from w3schools*/
 *{
   box-sizing: border-box;
+  margin: 0;
 }
 footer a:link{
     color:#ffdee4;
 }
 footer a:visited {
     color:#d9b18e;
-}
-body {
-    background-color:#ffdee4;
-    /************************************************************************************************
-    For homepage stuff in future! In notes here to see if it displays better in main.
-    ************************************************************************************************/
-  /*Only for homepage right now!*/
 }
 .home-page {
   background-image: url('images/webpagebg.png');
@@ -23,6 +17,10 @@ body {
     margin: 0;
     padding-top: 0;
     text-align: center;
+}
+.about-page {
+  color:#544844;
+  text-align: center;
 }
 /******Fixing the form's functionality before making it look pretty********
 .contact-page {
@@ -112,6 +110,11 @@ if it would break the code or not though!!*/
   main p{
     color:#544844;
     font-family:"Reddit Mono", Arial, monospace;
+    font-weight:500;
+  }
+  main h2, h3, h4, h5 {
+    font-family:"Merriweather", Courier, serif;
+    font-weight:800;
   }
   .smicon{
     display: inline-block;
@@ -159,7 +162,7 @@ if it would break the code or not though!!*/
   position: absolute;
   background-color: #ffbac0;
   min-width: 10rem;
-  box-shadow: 0 .5rem 1rem 0 regba(0,0,0,0.2);
+  box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2);
   z-index: 1;
 }
 .dropdown-content a {
