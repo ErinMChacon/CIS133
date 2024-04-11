@@ -40,7 +40,6 @@ footer a:visited {
   text-align: center;
   background-color: #ffdee4;
 }
-/******Fixing the form's functionality before making it look pretty********
 .contact-page {
   background-image: url('images/typewriter.png');
   background-position: top;
@@ -52,7 +51,6 @@ footer a:visited {
   height:max-content;
   
 }
-******************************************************************************/
 header {
     background-color: #544844;
     color:#ffbac0;
