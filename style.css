@@ -3,6 +3,23 @@
   box-sizing: border-box;
   margin: 0;
 }
+main p{
+  color:#544844;
+  font-family:"Reddit Mono", Arial, monospace;
+  font-weight:500;
+  padding: 2rem;
+}
+main h2, h3, h4, h5 {
+  color:#ffbac0;
+  font-family:"Merriweather", Courier, serif;
+  font-weight:800;
+  background-color:#544844;
+  padding: 1rem;
+  margin: auto;
+  width: 25%;
+  border-radius: 25px;
+  text-align: center;
+}
 footer a:link{
     color:#ffdee4;
 }
@@ -21,6 +38,7 @@ footer a:visited {
 .about-page {
   color:#544844;
   text-align: center;
+  background-color: #ffdee4;
 }
 /******Fixing the form's functionality before making it look pretty********
 .contact-page {
@@ -105,16 +123,6 @@ if it would break the code or not though!!*/
     font-family: "Merriweather", Courier, serif;
     font-size: 1rem;
     padding: 1rem 2rem;
-  }
-
-  main p{
-    color:#544844;
-    font-family:"Reddit Mono", Arial, monospace;
-    font-weight:500;
-  }
-  main h2, h3, h4, h5 {
-    font-family:"Merriweather", Courier, serif;
-    font-weight:800;
   }
   .smicon{
     display: inline-block;
