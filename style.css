@@ -208,10 +208,10 @@ form li {
   list-style: none;
   margin: auto;
   padding: 1rem;
-  background-image: url("images/BrownPointy_Stampright.png");
+  /**background-image: url("images/BrownPointy_Stampright.png");
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: 2.5rem;
+  background-size: 2.5rem;**/
 }
 label {
   display: inline-block;
