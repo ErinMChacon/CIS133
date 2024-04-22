@@ -74,10 +74,6 @@ if it would break the code or not though!!*/
   padding: 1rem;
   position: relative;
   }
-.container2 {
-    text-align:center;
-    position: relative;
-  }
   .gif {
     display: inline-block;
     position: relative;
@@ -122,11 +118,17 @@ if it would break the code or not though!!*/
     font-size: 1rem;
     padding: 1rem 2rem;
   }
-  .smicon{
-    display: inline-block;
+  .smiconfoot{
+    display: flex;
+    flex-direction: row;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    width: auto;
+    justify-content: center;
+  }
+  .smicon{
+    border-radius: 10px;
+    margin: .25rem;
+    width: 2rem;
   }
 
 .navmenu {
@@ -208,14 +210,15 @@ form li {
   list-style: none;
   margin: auto;
   padding: 1rem;
-  /**background-image: url("images/BrownPointy_Stampright.png");
+  background-image: url("images/BrownPointy_Stampright.png");
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: 2.5rem;**/
+  background-size: 2.5rem;
 }
 label {
   display: inline-block;
   position: relative;
+  top: 
   min-width: 90px;
   height: auto;
   text-align: right;
@@ -223,19 +226,19 @@ label {
 input,
 textarea {
   border: 3px solid #544844;
-  margin: .5rem;
+  margin: 1rem;
   width: 300px;
   font-family: "Reddit Mono", Courier, monospace;
   font-weight: bold;
 }
 .form_button {
   padding: .5rem;
-  margin-bottom: 2rem;
+  margin: 2rem;
   background-color: #ffbac0;
   border:3px solid #544844;
   border-radius: 25px;
   min-width: 10rem;
-  box-shadow: 0 .5rem 1rem 0 regba(0,0,0,0.2);
+  box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2);
   z-index: 1;
   font-family:"Merriweather", Courier, serif;
   position: relative;
