@@ -2,6 +2,8 @@
 *{
   box-sizing: border-box;
   margin: 0;
+  max-width: 1920px;
+  max-height: 1080px;
 }
 main p{
   color:#544844;
@@ -70,21 +72,20 @@ footer {
 /*container possibly can be renamed and reapplied to each individual image? not sure
 if it would break the code or not though!!*/
 .container {
-  display: inline-block;
+  display: block;
   padding: 1rem;
   position: relative;
   }
   .gallery{
     align-items: start;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: start;
+    display: flex;
+    justify-items: center;
   }
-  .gif {
-    display: inline-block;
-    position: relative;
-    top: 10rem;
-    right: 10rem;
+ .gif {
+    display: block;
+    margin: auto;
+    width: 25%;
+    padding: 0;
   }
   .image {
     opacity: 1;
