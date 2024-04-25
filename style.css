@@ -1,9 +1,13 @@
 /*modified code from w3schools*/
 *{
+
   box-sizing: border-box;
   margin: 0;
   max-width: 1920px;
   max-height: 1080px;
+}
+main {
+  background-color:#ffdee4;
 }
 main p{
   color:#544844;
@@ -29,13 +33,10 @@ footer a:visited {
     color:#d9b18e;
 }
 .home-page {
-  background-image: url('images/webpagebg.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding-top: 0;
-    text-align: center;
+  background-image: url("images/wainscotingdesktop.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
 }
 .about-page {
   color:#544844;
@@ -82,10 +83,10 @@ if it would break the code or not though!!*/
     justify-items: center;
   }
  .gif {
-    display: block;
+    display: flex;
+    padding-top: 20%;
     margin: auto;
     width: 25%;
-    padding: 0;
   }
   .image {
     opacity: 1;
