@@ -1,37 +1,16 @@
 /*modified code from w3schools*/
-*{
-  box-sizing: border-box;
+/**{
+box-sizing: border-box;
   margin: 0;
   max-width: 1920px;
   max-height: 1080px;
-}
-/*body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }*/
-.home-page {
-  background-image: url("images/wainscotingdesktop.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-}
-.about-page {
-  color:#544844;
-  text-align: center;
-  background-color: #ffdee4;
-}
-.contact-page {
-  background-image: url('images/typewriter.png');
-  background-position: top;
-  background-size: 100%;
-  background-repeat: no-repeat;
+body {
+  min-height: 100vh;
+  display: grid;
+  flex-direction: column;
+  grid-template-rows: 1fr auto;
   margin: 0;
-  padding-top: 85%;
-  text-align: center;
-  height:max-content;
-  
 }
 header {
   display: inline-block;
@@ -62,20 +41,27 @@ main h2, h3, h4, h5 {
   border-radius: 25px;
   text-align: center;
 }
-footer {
-  display: inline-block;
-  width: 100%;
-  background-color: #544844;
-  color:#ffbac0;
+.home-page {
+  background-image: url("images/wainscotingdesktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about-page {
+  color:#544844;
   text-align: center;
-  padding-bottom: 1rem;
-  margin: auto;
+  background-color: #ffdee4;
 }
-footer a:link{
-  color:#ffdee4;
-}
-footer a:visited {
-  color:#d9b18e;
+.contact-page {
+  background-image: url('images/typewriter.png');
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding-top: 85%;
+  text-align: center;
+  height:max-content;
+  
 }
 /*container possibly can be renamed and reapplied to each individual image? not sure
 if it would break the code or not though!!*/
@@ -91,16 +77,13 @@ if it would break the code or not though!!*/
     justify-items: center;
   }
   .dog-jail {
-    display: block;
+    display: inline-block;
     padding: 1rem;
     position: relative;
-    padding-bottom: 0;
 
   }
  .gif {
     display: inline-block;
-    padding-bottom: 0;
-    margin-bottom: 0;
     width: 15rem;
   }
   .image {
@@ -211,6 +194,19 @@ if it would break the code or not though!!*/
 }
 .dropdown:hover .dropdown-content {
   display: block;
+}
+footer {
+  background-color: #544844;
+  color:#ffbac0;
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-top: auto;
+}
+footer a:link{
+  color:#ffdee4;
+}
+footer a:visited {
+  color:#d9b18e;
 }
 /**************************For About Page*********************************************************/
 
