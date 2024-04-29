@@ -70,29 +70,11 @@ main h2, h3, h4, h5 {
   padding: 1rem;
   position: relative;
   }
-  .empty {
-    display: block;
-    padding: .5rem;
-    position: relative;
-  }
   .gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     justify-items: center;
-  }
-  .dog-jail {
-    display: block;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    position: relative;
-    top: 5rem;
-  }
- .gif {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    padding-bottom: 0;
-    position: relative;
+    align-items: center;
   }
   .image {
     opacity: 1;
@@ -131,6 +113,20 @@ main h2, h3, h4, h5 {
     font-family: "Merriweather", Courier, serif;
     font-size: 1rem;
     padding: 1rem 2rem;
+  }
+  #dog-jail {
+    display: block;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    position: relative;
+    top: 5rem;
+  }
+ #gif {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
+    position: relative;
   }
   .smiconfoot{
     display: flex;
