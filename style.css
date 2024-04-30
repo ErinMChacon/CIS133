@@ -1,4 +1,4 @@
-/*modified code from w3schools*/
+/****************************************ENTIRE SITE CODE****************************************************/
 body {
   max-width: 1920px;
   max-height: 1080px;
@@ -37,110 +37,7 @@ main h2, h3, h4, h5 {
   border-radius: 25px;
   text-align: center;
 }
-.home-page {
-  background-image: url("images/wainscotingdesktop.png");
-  background-repeat: no-repeat;
-  background-position: 100%;
-  background-size: cover;
-  align-items: center;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  justify-items: center;
-  margin-top: 2rem;
-  margin-bottom: 0;
-}
-.about-page {
-  color:#544844;
-  text-align: center;
-  background-color: #ffdee4;
-}
-.contact-page {
-  background-image: url('images/typewriter.png');
-  background-position: top;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding-top: 85%;
-  text-align: center;
-  height:max-content;
-  
-}
-.container {
-  display: block;
-  padding: 1rem;
-  position: relative;
-  }
-  .gallery{
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    align-items: center;
-  }
-  .image {
-    opacity: 1;
-    display: inline-block;
-    padding: 1rem;
-    position: relative;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-  }
-  
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  .container:hover .image {
-    opacity: 0.3;
-  }
-  
-  .container:hover .middle {
-    opacity: 1;
-  }
-  
-  .text {
-    background-color: #544844;
-    border-radius: 25px;
-    color: #ffbac0;
-    font-family: "Merriweather", Courier, serif;
-    font-size: 1rem;
-    padding: 1rem 2rem;
-  }
-  #dog-jail {
-    display: block;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    position: relative;
-    top: 2rem;
-  }
- #gif {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    padding-bottom: 0;
-    position: relative;
-  }
-  .smiconfoot{
-    display: flex;
-    flex-direction: row;
-    padding-top: 1rem;
-    padding-bottom: .5rem;
-    justify-content: center;
-  }
-  .smicon{
-    border-radius: 10px;
-    margin: .25rem;
-    width: 2rem;
-  }
-
+/********************Dropdown Nav code, used everywhere EXCEPT Homepage******************/
 .navmenu {
   background-color: #544844;
   font-family:"Merriweather", Courier, serif;
@@ -199,23 +96,138 @@ main h2, h3, h4, h5 {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-footer {
-  background-color: #544844;
-  color:#ffbac0;
-  text-align: center;
-  padding-bottom: 1rem;
-  margin-top: auto;
+/**********************************HOME PAGE CODE*************************************************************/
+.home-page {
+  background-image: url("images/wainscotingdesktop.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  margin-top: 2rem;
+  margin-bottom: 0;
 }
-footer a:link{
-  color:#ffdee4;
+/*************Image Nav Gallery code*********************************************/
+.grid{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-footer a:visited {
-  color:#d9b18e;
+.grid div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-size: 22px;
+  background-color: #151321;
+  color: #febc14; 
+  height: 5rem;
+  margin-bottom: 1.25rem;
 }
-/**************************For About Page*********************************************************/
+@media (min-width: 900px){
+  .grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30% [last];
+    grid-template-rows: repeat(3, 30vh);
+    grid-auto-rows: 150px;
+    gap: 0.5rem;
+    justify-content: stretch;
+  }
+    .grid div{
+      height: auto;
+      margin-bottom: 0;
 
-/*************************************************************************************************/
-/**************************For Contact Form*******************************************************/
+    }
+  .item{
+    grid-area: 2 / 2 / 4 / span last;
+  }
+}
+/*****Image nav w/ clickable label, courtesy of w3schools*****/
+.container {
+  display: block;
+  padding: 1rem;
+  position: relative;
+  }
+  /**Code replaced by grid class, kept here just in case***
+  .gallery{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+  }
+  **************************************************************/
+  .image {
+    opacity: 1;
+    display: inline-block;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #544844;
+    border-radius: 25px;
+    color: #ffbac0;
+    font-family: "Merriweather", Courier, serif;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+/*********Fursona and Wainscotting*********************************/
+#dog-jail {
+  display: block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: relative;
+  top: 2rem;
+}
+#gif {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 0;
+  position: relative;
+}
+/********************************ABOUT PAGE CODE*******************************************************************/
+.about-page {
+  color:#544844;
+  text-align: center;
+  background-color: #ffdee4;
+}
+/*******************************CONTACT PAGE CODE******************************************************************/
+.contact-page {
+  background-image: url('images/typewriter.png');
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding-top: 85%;
+  text-align: center;
+  height:max-content; 
+}
+/*******************Contact Form Code***********************************/
 form {
   display:inline-block;
   width: auto;
@@ -266,4 +278,30 @@ textarea {
   position: relative;
   bottom: 2rem;
 }
-/*************************************************************************************************/
+/*********************************FOOTER CODE, USED EVERYWHERE JUST DOWN HERE BECAUSE. FOOTER.*********************/
+  .smiconfoot{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    justify-content: center;
+  }
+  .smicon{
+    border-radius: 10px;
+    margin: .25rem;
+    width: 2rem;
+  }
+
+footer {
+  background-color: #544844;
+  color:#ffbac0;
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-top: auto;
+}
+footer a:link{
+  color:#ffdee4;
+}
+footer a:visited {
+  color:#d9b18e;
+}

@@ -1,7 +1,3 @@
-<!----------------------------------------------------------------------
-Coding in homepage first, then when set up I will copy and paste new about,
-contact, and project pages with set style.
-    ------------------------------------------------------------------------>
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -14,23 +10,16 @@ contact, and project pages with set style.
     <link rel="stylesheet" href="style.css">
     <title>Erin Chacon: Artist, Web Designer, & Maker</title>
     <!---------------------------------------------------------------------------------
-        Font information
+        Font information, courtesy of Google Fonts
     ---------------------------------------------------------------------------------->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-------------------------------------------------------------------------------------
-        Raw code for clickable containers and fade when hover image. Apply to nav
-        -----------------------------------------------------------------------------------
-    --------------------------------------------------------------------------------------->
-        <!-- Temporarily moved header back. Can't decide if nav will be separate from icon
-            nav or not, specifically on first page
-        -->
-    <!--dropdown nav test---------------------------------------------------------->
    <!--------------------------------------------------------------------------------------
-    Home Page is based solely on image nav, so nav does not exist here!
+    Home Page is based solely on image nav, so nav does not exist here! Code is included
+    for future reference.
     ---------------------------------------------------------------------------------------
      <nav>
         <div class="navmenu">
@@ -48,14 +37,63 @@ contact, and project pages with set style.
     </div>
         </div>
     </nav>
-    -->
+    --------------------------------------------------------------------------------------------->
     <header>
-        <!--Images go here usually-->
+        <!---May overlay this with an image background? Gotta find/draw one first though!--------->
         <h1>Erin Chacon, Artist, Web Designer, & Maker</h1>
         <p class="tagline">Welcome to the Gallery!</p>
     </header>
     <main>
-        <div class="gallery">
+        <!---Fancy grid code below courtesy of Mojtaba Seyedi, https://css-tricks.com/almanac/properties/g/grid-area/
+            modified by Juliet Crocco and myself ---------------------------------------------------------------------->
+        <div class="grid">
+            <div>
+                <div class="container">
+                    <img src="images/drawing.png" alt="drawing of fursona" class="image">
+                    <a href="projects.html"><div class="middle">
+                        <div class="text">Artwork</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="container">
+                    <img src="images/cert.png" alt="web dev fake certification" class="image">
+                    <a href="projects.html"><div class="middle">
+                        <div class="text">Web Design</div>
+                        </div>
+                    </a>
+            </div>
+        </div>
+            <div class="item">
+                <div class="container">
+                    <img src="images/photo.png" alt="photo of artist" class="image">
+                    <a href="about.html"><div class="middle">
+                        <div class="text">About</div>
+                        </div>
+                    </a>
+            </div>
+        </div>
+            <div>
+                <div class="container">
+                    <img src="images/phone.png" alt="vintage telephone" class="image">
+                    <a href="contact.html"><div class="middle">
+                        <div class="text">Contact</div>
+                        </div>
+                    </a>
+            </div>
+        </div>
+            <!----------Saving for later if I want to add more to the gallery!----------
+            <div>5</div>
+            <div>6</div>  
+            <div>7</div>  
+            <div>8</div>  
+            <div>9</div>  
+            <div>10</div>
+            ----------DON'T DELETE BELOW DIV TAG!! IT CLOSES THE GALLERY(GRID) CODE------------>
+          </div>
+        <!--------------Original gallery layout below, just in case!-----------------------
+            <div class="gallery">
             <div class="container">
                 <img src="images/drawing.png" alt="drawing of fursona" class="image">
                 <a href="projects.html"><div class="middle">
@@ -84,9 +122,8 @@ contact, and project pages with set style.
                 </div>
                 </a>
             </div>
-    </div>
-        <!--Wainscotting and Sora pup gif.
-        -------------------------------------------------------------------------------------------------->
+    </div>-------------------------------------------------------------------------------------->
+        <!------------------Wainscotting and Sora pup gif.-------------------------------------->
     <div class="home-page">
         <div id="dog-jail">
         <img src="images/soraweb.gif" alt="spaniel looking up" id="gif">
@@ -94,16 +131,14 @@ contact, and project pages with set style.
     </div>
     </main>
     <footer>
-        <!------------------------------------------------------------------------------------------------------------------------------------
-            Figuring out social media links here. Color overlay as well as center them. May have to make itty bitty boxes (containers?)
-            for each of them to live in so they can be in a row. Can also use this technique for header/nav images???
-        --------------------------------------------------------------------------------------------------------------------------------------->
+        <!-----------------Social Media icons and links---------------------------------------->
         <div class="smiconfoot">
             <a href="https://www.instagram.com/strawberrygears/"><img src="images/instagramicon.png" alt="instagram icon" class="smicon"></a>
             <a href="https://www.twitter.com/strawberrygears/"><img src="images/twittericon.png" alt="twitter icon" class="smicon"></a>
             <a href="https://www.linkedin.com/in/erin-chacon-4a4686143/"><img src="images/linkedin.png" alt="linkedin icon" class="smicon"></a>
             <a href="https://www.etsy.com/shop/StrawberryGearsShop"><img src="images/etsyicon.png" alt="etsy icon" class="smicon"></a>
         </div>
+        <!----------------Credits--------------------------------------------------------------->
      <small>Website by <a href="mailto:strawberrygearsart@gmail.com">Erin Chacon</a>, Strawberrygears Art &copy; 2024.</small>
     </footer>
 </body>
