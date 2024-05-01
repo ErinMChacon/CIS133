@@ -143,16 +143,16 @@ modified by Juliet Crocco and myself********************************************
       margin-bottom: 0;
 
     }
-  .item{
+  .cert{
     grid-area: 1 / 3 / 2 / span last;
   }
-  .item2{
+  .art{
     grid-area: 1 / 1 / 1 / 3;
   }
-  .item3{
+  .telephone{
     grid-area: 3 / 2 / 4 / span last;
   }
-  .item4 {
+  .photo {
     grid-area: 3 / 2 / 3 / 1;
   }
 }
