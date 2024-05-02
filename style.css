@@ -96,6 +96,12 @@ main h2, h3, h4, h5 {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+#logo {
+  float:right;
+  width: 3rem;
+  margin: 1rem;
+  border-radius: 25px;
+}
 /**********************************HOME PAGE CODE*************************************************************/
 .home-page {
   background-image: url("images/wainscotingdesktop.png");
@@ -227,6 +233,39 @@ modified by Juliet Crocco and myself********************************************
   color:#544844;
   text-align: center;
   background-color: #ffdee4;
+  padding: 2rem 0;
+}
+.about-page a:link{
+  text-decoration: none;
+}
+#balloon {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  margin: auto;
+}
+.about_button {
+  display: block;
+  box-sizing: border-box;
+  color:#ffbac0;
+  font-family:"Merriweather", Courier, serif;
+  font-weight:800;
+  text-decoration: none;
+  background-color:#544844;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 25%;
+  min-width: 10rem;
+  border: none;
+  border-radius: 25px;
+  text-align: center;
+}
+.about_button:hover {
+  opacity: 0.7;
+  border: .25rem solid #ffbac0;
+  border-radius: 25px;
+  margin: 2rem auto;
 }
 /*******************************CONTACT PAGE CODE******************************************************************/
 .contact-page {
@@ -280,8 +319,9 @@ textarea {
 .form_button {
   padding: .5rem;
   margin: 2rem;
-  background-color: #ffbac0;
-  border:3px solid #544844;
+  color: #ffbac0;
+  background-color: #544844;
+  border: none;
   border-radius: 25px;
   min-width: 10rem;
   box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2);
