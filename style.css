@@ -330,6 +330,61 @@ textarea {
   position: relative;
   bottom: 2rem;
 }
+/********************************ART PAGE CODE*****************************************************************/
+#art-page {
+  color:#544844;
+  text-align: center;
+  background-color: #ffbac0;
+  padding: 3rem 3rem;
+  box-sizing: border-box;
+}
+#art-page h4 {
+  display: inline;
+  width: 100%;
+  margin: 0;
+}
+.artwork-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+/**card coding courtesy of w3schools. See art.html for link**/
+.card {
+  /* Add shadows to create the "card" effect */
+  /*box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);*/
+  min-width: 300px;
+  transition: 0.3s;
+  border: .5rem solid #544844;
+  border-radius: 25px;
+  background-color: #ffdee4;
+  padding: 1rem;
+}
+.card img{
+  border-radius: inherit;
+  width: 100%;
+}
+
+/* On mouse-over, add a deeper shadow */
+/*.card:hover {
+  box-shadow: 0 2rem 4rem 0 rgba(0,0,0,0.2);
+}*/
+
+/* Add some padding inside the card container */
+.artwork-container {
+  padding: 1rem;
+}
+/****responsie sizing for grid****/
+@media (max-width: 900px){
+  .artwork-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-content: stretch;
+  }
+}
+
 /*********************************FOOTER CODE, USED EVERYWHERE JUST DOWN HERE BECAUSE. FOOTER.*********************/
   .smiconfoot{
     display: flex;
