@@ -329,6 +329,21 @@ textarea {
   position: relative;
   bottom: 2rem;
 }
+/********************************THANK YOU PAGE CODE***********************************************************/
+#thankyou-page {
+  color:#544844;
+  text-align: center;
+  background-color: #ffdee4;
+  padding: 2rem 0;
+  width: 100vw;
+}
+#thankyou-page img {
+  display: block;
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
 /********************************ART PAGE CODE*****************************************************************/
 #art-page {
   color:#544844;
@@ -359,7 +374,6 @@ textarea {
   min-width: 300px;
   transition: 0.3s;
   border-radius: 25px;
-  padding: 1rem;
   margin: 3rem;
 }
 .card img{
@@ -385,7 +399,14 @@ textarea {
     justify-content: stretch;
   }
 }
-
+/********************************WEB DEV PAGE CODE*****************************************************************/
+#webdev-page{
+  color:#544844;
+  text-align: center;
+  background-color: #ffdee4;
+  padding: 2rem 0;
+  width: 100vw;
+}
 /*********************************FOOTER CODE, USED EVERYWHERE JUST DOWN HERE BECAUSE. FOOTER.*********************/
   .smiconfoot{
     display: flex;
