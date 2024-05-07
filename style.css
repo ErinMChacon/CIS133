@@ -3,19 +3,18 @@ body {
   max-width: 1920px;
   max-height: 1080px;
   height: 100vh;
-  display: grid;
+  display: flex;
   flex-direction: column;
-  grid-template-rows: 1fr auto;
   margin: 0;
+  width: 100vw;
 }
 header {
   display: inline-block;
     background-color: #544844;
     color:#ffbac0;
     margin: 0;
-    padding: 1rem;
     text-align: center;
-    width: 100%;
+    width: 100vw;
 }
 main {
   background-color:#ffdee4;
@@ -334,14 +333,17 @@ textarea {
 #art-page {
   color:#544844;
   text-align: center;
-  background-color: #ffbac0;
-  padding: 3rem 3rem;
   box-sizing: border-box;
+  padding-top: 2rem;
 }
 #art-page h4 {
   display: inline;
-  width: 100%;
-  margin: 0;
+  width: 100vw;
+  margin: auto;
+  padding: 1rem;
+}
+#art-page p{
+  padding-bottom: 1rem;
 }
 .artwork-grid {
   display: grid;
@@ -356,10 +358,9 @@ textarea {
   /*box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);*/
   min-width: 300px;
   transition: 0.3s;
-  border: .5rem solid #544844;
   border-radius: 25px;
-  background-color: #ffdee4;
   padding: 1rem;
+  margin: 3rem;
 }
 .card img{
   border-radius: inherit;
@@ -405,6 +406,7 @@ footer {
   text-align: center;
   padding-bottom: 1rem;
   margin-top: auto;
+  width: 100vw;
 }
 footer a:link{
   color:#ffdee4;
