@@ -1,7 +1,6 @@
 /****************************************ENTIRE SITE CODE****************************************************/
 body {
-  max-width: 1920px;
-  max-height: 1080px;
+  max-width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -96,13 +95,22 @@ main h2, h3, h4, h5 {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/*******************Might Reapply if time!*****************
 #logo {
   float:right;
   width: 3rem;
   margin: 1rem;
   border-radius: 25px;
 }
+**********************/
 /**********************************HOME PAGE CODE*************************************************************/
+#home-page {
+  color:#544844;
+  text-align: center;
+  background-color: #ffdee4;
+  padding: 0;
+  max-width: 100vw;
+}
 .home-page {
   background-image: url("images/wainscotingdesktop.png");
   background-repeat: no-repeat;
@@ -112,70 +120,115 @@ main h2, h3, h4, h5 {
   display: grid;
   grid-template-columns: 2fr 1fr;
   justify-items: center;
-  margin-top: 2rem;
-  margin-bottom: 0;
+  width: 100%;
 }
 /*************Image Nav Gallery code*********************************************/
+/*****Image nav w/ clickable label, courtesy of w3schools*****/
+.container {
+  display: inline-block;
+  padding: .5rem;
+  position: relative;
+  }
+/**************************************************************/
+.image {
+  opacity: 1;
+  display: block;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #544844;
+  border-radius: 25px;
+  color: #ffbac0;
+  font-family: "Merriweather", Courier, serif;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+}
 /****Fancy grid code below courtesy of Mojtaba Seyedi, https://css-tricks.com/almanac/properties/g/grid-area/
 modified by Juliet Crocco and myself********************************************/
-.grid{
+/*.grid{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #d9b18e;
+  align-items: center;
   padding: 2rem;
   margin: 0;
-  width: 100%;
 }
 .grid div {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: antiquewhite;
   height: 15rem;
-  margin: 5%;
-}
+  margin: 0;
+}*/
 @media (min-width: 900px){
   .grid {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25% [last];
+    grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: repeat(4, 25vh);
-    grid-auto-rows: 1rem;
-    gap: 1rem;
-    justify-content: stretch;
+    grid-auto-rows: .5rem;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-width: 1500px;
   }
-    .grid div{
-      height: auto;
-      margin-bottom: 0;
-
-    }
   .cert{
-    grid-area: 1 / 3 / 2 / span last;
+    grid-area: 2 / 3 / 2 / 4;
   }
   .art{
-    grid-area: 1 / 1 / 1 / 3;
+    grid-area: 1 / 1 / 4 / 2;
   }
   .telephone{
-    grid-area: 3 / 2 / 4 / span last;
+    grid-area: 3 / 4 / 4 / 4;
   }
   .photo {
-    grid-area: 3 / 2 / 3 / 1;
+    grid-area: 3 / 2 / 3 / 2;
   }
 }
   @media (max-width: 900px){
     .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
-      justify-content: stretch;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
     }
-  }
-
-/*****Image nav w/ clickable label, courtesy of w3schools*****/
-.container {
-  display: inline-block;
-  padding: 1rem;
-  position: relative;
+    .cert{
+      max-width: 500px;
+    }
+    .art{
+      max-width: 500px;
+    }
+    .telephone{
+      max-width: 500px;
+    }
+    .photo {
+      max-width: 500px;
+    }
   }
   /**Code replaced by grid class, kept here just in case***
   .gallery{
@@ -184,58 +237,21 @@ modified by Juliet Crocco and myself********************************************
     justify-items: center;
     align-items: center;
   }
-  **************************************************************/
-  .image {
-    opacity: 1;
-    display: block;
-    padding: 1rem;
-    position: relative;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-  }
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  .container:hover .image {
-    opacity: 0.3;
-  }
-  
-  .container:hover .middle {
-    opacity: 1;
-  }
-  
-  .text {
-    background-color: #544844;
-    border-radius: 25px;
-    color: #ffbac0;
-    font-family: "Merriweather", Courier, serif;
-    font-size: 1rem;
-    padding: 1rem 2rem;
+
   }
 /*********Fursona and Wainscotting*********************************/
 #dog-jail {
-  display: block;
-  margin-bottom: 0;
+  display: inline-block;
+  margin: 0 auto;
   padding-bottom: 0;
   position: relative;
   top: 2rem;
 }
 #gif {
-  display: inline-block;
+  display: block;
   width: 100%;
-  height: auto;
   padding-bottom: 0;
-  position: relative;
+  max-width: 500px;
 }
 /********************************ABOUT PAGE CODE*******************************************************************/
 .about-page {
