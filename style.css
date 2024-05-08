@@ -41,6 +41,7 @@ main h2, h3, h4, h5 {
   background-color: #544844;
   font-family:"Merriweather", Courier, serif;
   overflow:hidden;
+  padding: 1rem;
 }
 .navmenu a {
   float:left;
@@ -407,18 +408,61 @@ textarea {
   padding: 2rem 0;
   width: 100vw;
 }
+#webdev-page p{
+  line-height: 35px;
+}
+p a:link {
+  background-color:#544844;
+  color: #ffbac0;
+  padding: 5px;
+  border-radius: 5px;
+}
+p a:visited {
+  background-color:#544844;
+  color: #ffbac0;
+  padding: 5px;
+  border-radius: 5px;
+}
+p a:hover {
+  background-color:#ffdee4;
+  color: #544844;
+}
 .badge-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   justify-items: center;
   align-items: center;
+  margin: 1rem 2rem;
+  border: .5rem solid #544844;
+  border-radius: 25px;
 }
 .badge {
-  min-width: 300px;
-  transition: 0.3s;
-  border-radius: 25px;
-  margin: 3rem;
+  margin: 1rem;
+}
+.badge img {
+  width: 100%;
+}
+@media (max-width: 900px){
+  .badge-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-content: stretch;
+  }
+}
+/*********Reused homepage code for interactive image links**********/
+#otherdev {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem 2rem;
+}
+#otherdev p{
+  padding-top: 0;
+  margin: 0;
 }
 /*********************************FOOTER CODE, USED EVERYWHERE JUST DOWN HERE BECAUSE. FOOTER.*********************/
   .smiconfoot{
@@ -446,5 +490,8 @@ footer a:link{
   color:#ffdee4;
 }
 footer a:visited {
-  color:#d9b18e;
+  color:#ffdee4;
+}
+footer a:hover {
+  color: white;
 }
