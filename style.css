@@ -247,11 +247,9 @@ modified by Juliet Crocco and myself********************************************
 .about-page a:link{
   text-decoration: none;
 }
-#balloon {
+.about-image {
   display: inline-block;
   width: 100%;
-  height: auto;
-  padding: 2rem;
   margin: auto;
 }
 .about_button {
