@@ -407,6 +407,19 @@ textarea {
   padding: 2rem 0;
   width: 100vw;
 }
+.badge-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+.badge {
+  min-width: 300px;
+  transition: 0.3s;
+  border-radius: 25px;
+  margin: 3rem;
+}
 /*********************************FOOTER CODE, USED EVERYWHERE JUST DOWN HERE BECAUSE. FOOTER.*********************/
   .smiconfoot{
     display: flex;
