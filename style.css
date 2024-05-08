@@ -162,6 +162,15 @@ modified by Juliet Crocco and myself********************************************
     grid-area: 3 / 2 / 3 / 1;
   }
 }
+  @media (max-width: 900px){
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      justify-content: stretch;
+    }
+  }
+
 /*****Image nav w/ clickable label, courtesy of w3schools*****/
 .container {
   display: inline-block;
@@ -391,7 +400,7 @@ textarea {
 .artwork-container {
   padding: 1rem;
 }
-/****responsie sizing for grid****/
+/****responsive sizing for grid****/
 @media (max-width: 900px){
   .artwork-grid {
     display: grid;
