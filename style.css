@@ -37,7 +37,6 @@ main h2, h3, h4, h5 {
   background-color:#544844;
   padding: 1rem;
   margin: auto;
-  width: 25%;
   border-radius: 25px;
   text-align: center;
 }
@@ -401,12 +400,6 @@ textarea {
   text-align: center;
   box-sizing: border-box;
   padding-top: 2rem;
-}
-#art-page h4 {
-  display: inline;
-  width: 100vw;
-  margin: auto;
-  padding: 1rem;
 }
 #art-page p{
   padding-bottom: 1rem;
