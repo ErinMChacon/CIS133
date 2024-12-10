@@ -1,92 +1,1377 @@
-header {
-    display: inline-block;
-      background-color: #e4cdff;
-      color:#372544;
-      margin: 0;
-      text-align: center;
-      width: 100vw;
-  }
-  h1{
-    font-family: "Inconsolata", courier, monospace;
-    font-weight: 800;
-  }
-  .tagline{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 800;
-  }
-  main{
-    background-color:#ffdee4;
-  }
-  main p{
-    color:#372544;
-    font-family:'Courier New', Courier, monospace;
-    font-weight:700;
-    padding: 1rem 2rem;
-    text-align: left;
-  }
-  main h2, h3, h4, h5 {
-    color:#372544;
-    font-family:"Inconsolata", Courier, monospace;
-    font-weight:800;
-    background-color:#e4cdff;
-    padding: 1rem 1rem;
-    border-radius: 25px;
+/*
+    CSS Main Stylesheet
+    Erin Chacon, Final Project
+    CIS233DA, Fall 2024
+*/
+
+/* General Styling */
+
+body{
+    box-sizing: border-box;
+    margin:0;
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+/*Navigation Styles*/
+
+.navmenu {
+    overflow: hidden;
+    display: flex;
+    width: 100vw;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: nowrap;
+   padding: 1rem 1.5rem;
+}
+
+.navmenu a {
+    text-decoration: none;
+    color: #535353;
     text-align: center;
-  }
-  .portrait{
+    font-family: "Klee One", 'Trebuchet MS', sans-serif;
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+.navmenu a:hover {
+    color: #f5bdc1;
+}
+
+.logo img {
+    width: 7rem;
+}
+
+/* dropdown code help courtesy w3schools*/
+
+.dropdown {
+    float:left;
+    overflow: hidden;
+}
+
+.dropdowncontent {
+    background-color: white;
+    display:none;
+    position: absolute;
+    width: fit-content;
+    z-index: 1;
+    box-shadow: .2rem .2rem 2px #535353;
+    text-align: left;
+    margin-top: .1rem;
+}
+
+.dropdowncontent a {
+    float: none;
+    color:#535353;
+    padding: 1rem 1.2rem;
+    text-decoration: none;
+    display:block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdowncontent {
     display: block;
-    padding: 0;
+}
+
+/*Header Styles*/
+
+/**REQUIRED background (color), 11/25/2024**/
+header {
+    width: 100vw;
+    text-align: center;
+    background-color: #f5bdc1;
+    padding: 2rem 3rem;
+    margin: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.headerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    padding: 1rem 0rem 1rem 3rem;
+}
+
+.headerText h1 {
+    color: #535353;
+    text-align: center;
+    font-family: "Klee One", 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    padding: 1rem 2rem;
+}
+
+.headerText p {
+    color: #535353;
+    text-align: center;
+    font-family: "Courier Prime", Courier, monospace;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 2rem 2rem;
+}
+
+.headerText button {
+    font-family: "Klee One", 'Trebuchet MS', sans-serif;
+    color:#f5bdc1;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: #535353;
+    border: .5rem outset #d3b393;
+    border-radius: 25px;
+    box-shadow: 0.5rem .5rem 5px #535353;
+}
+
+.headerText button:hover {
+    color:#ffffff;
+    background-color: #535353;
+    border: .5rem inset #d3b393;
+    box-shadow: 0.5rem .5rem 5px #222222 inset;
+}
+
+.heroImage {
+    display: block;
+    text-align: center;
+    width: 50%;
+}
+
+.heroImage img {
+    width: 70%;
+}
+
+#phone {
+    filter: drop-shadow(1rem 1rem 5px #535353);
+}
+
+#self {
+    border-radius: 100%;
+}
+
+/***********Main Styles*********************/
+
+main {
+    width: 100vw;
+    text-align: center;
+    background-color: white;
+    padding: 3rem 0;
+    margin: 0;
+}
+
+main h2 {
+    color: #535353;
+    text-align: center;
+    font-family: "Klee One", 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 2rem 2rem;
+}
+
+.button {
+    font-family: "Klee One", 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color:#f5bdc1 ;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    background-color: #535353;
+    border: .5rem outset #d3b393;
+    border-radius: 25px;
+}
+
+/**REQUIRED pseudo-element, 11/25/2024**/
+
+.button:hover {
+    color:white;
+    border: .5rem inset #d3b393;
+}
+
+section .button {
+    color: #535353;
+    background-color: #f5bdc1;
+}
+
+/**Home Page**/
+
+#myStuff {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+#myStuff section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    padding: 1rem 0rem;
+    background-color: #535353;
+    border-radius: 25px;
+    margin: auto;
+    box-shadow: .5rem .5rem 5px #f5bdc1;
+}
+
+#myStuff section img{
+    width: 20rem;
+    padding-bottom: 1rem;
+}
+
+#myStuff section h3 {
+    color: white;
+    text-align: center;
+    font-family: "Courier Prime", Courier, monospace;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+/**Work Page**/
+
+#myWork {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+#myWork section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 35%;
+    padding: 1rem 0rem;
+    background-color: #535353;
+    border-radius: 25px;
+    margin: auto;
+    box-shadow: .5rem .5rem 5px #f5bdc1;
+}
+
+#myWork section img{
+    width: 20rem;
+    padding-bottom: 1rem;
+}
+
+#myWork section h3 {
+    color: white;
+    text-align: center;
+    font-family: "Courier Prime", Courier, monospace;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+/**Art Page**/
+
+.gallery {
+    display: block;
+    width: 100%;
+    padding: 5% 4rem 15% 4rem;
+}
+
+.gallery p {
+    color: #535353;
+    font-family: "Courier Prime", Courier, monospace;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 1rem 0 3rem 0;
+}
+
+.galleryContainer {
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.galleryItem img {
+    width: 100%;
+}
+
+/**Web Design Page**/
+
+#myWeb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    padding: 10% 3rem;
+}
+
+#webContainer {
+    width: 100%;
+    display: grid;
+    text-align: center;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+#myWeb p {
+    color: #535353;
+    font-family: "Courier Prime", Courier, monospace;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 2rem 0 3rem 0;
+}
+
+.site {
+    width:100%;
+    background-color: #535353;
+    padding: 1rem 1rem 3rem 1rem;
+}
+
+.site img {
+    width:100%;
+    border: .5rem solid #f5bdc1;
+}
+
+.site figcaption {
+    color: white;
+    text-align: center;
+    font-family: "Courier Prime", Courier, monospace;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+/**About Page**/
+
+#quote {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15% 1rem;
+}
+
+blockquote {
+    display: inline-block;
+    font-family: "Klee One", 'Trebuchet MS', sans-serif;
+    color:#535353;
+    font-weight: 800;
+    font-size: 2rem;
+    margin:0;
+    padding:0;
+}
+
+blockquote::before {
+    background: url("images/quoteleft.png") no-repeat;
+    background-size: 2rem 2rem;
+    content:"";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+
+blockquote::after {
+    background: url("images/quoteright.png") no-repeat;
+    background-size: 2rem 2rem;
+    content:"";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+
+#aboutInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    background-color: #535353;
+    padding: 15% 4rem 15% 4rem;
+}
+
+#self2 {
+    width: 70%;
+    border-radius: 25px;
+}
+
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 50%;
+}
+
+/**Timeline code courtesy w3 schools**/
+.timeline {
     position: relative;
     width: 100%;
-  }
-  a {
-    color: #372544;
-  }
-  a:hover {
-    color:#d600b2;
-  }
-ul {
-    font-family:'Courier New', Courier, monospace;
-    font-weight: 800;
-    list-style-type: circle;
-    padding: 2rem;
-    text-align:left;
+    margin: 0 auto;
 }
-li {
-    padding: .5rem;
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
 }
-table {
-    border-collapse: collapse;
-    padding: 0;
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+  }
+
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #f5bdc1;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .lft {
+    left: 0;
+  }
+
+  .rght {
+    left: 50%;
+  }
+
+  .lft::before {
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #fadfe4;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #fadfe4;
+  }
+
+  .rght::before {
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #fadfe4;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fadfe4 transparent transparent;
+  }
+  
+  .rght::after {
+    left: -16px;
+  }
+
+  .timelinecontent {
+    padding: 20px 30px;
+    background-color: #fadfe4;
+    position: relative;
+    border-radius: 6px;
+    color:#535353;
+    font-family: "Courier Prime", Courier, monospace;
+  }
+
+  .timelinecontent h3 {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  .timelinecontent p {
+    font-size: 1.2rem;
+  }
+
+  #moreAbout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    padding: 15% 4rem 15% 4rem;
+}
+
+#moreAbout img{
+    width: 100%;
+    float: right;
+    border-radius: 25px;
+}
+
+#moreAbout p {
+    font-family: "Courier Prime", Courier, monospace;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+#moreAbout .left {
+    padding: 0 3rem;
+}
+
+#video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5% 1rem 15% 1rem;
+    background-color: #fadfe4;
+}
+
+#video p {
+    font-family: "Courier Prime", Courier, monospace;
+    text-transform: lowercase;
+    font-weight: 700;
+    color: #535353;
+    padding-bottom: 3rem;
+}
+
+#video a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #d3b393;
+}
+
+#video a:hover {
+    color:#535353;
+}
+
+/**Contact Page**/
+
+#contactinfo {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    padding: 1rem;
+}
+
+#contactMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    padding: 1rem;
+    background-color: #535353;
+}
+
+.left form {
+    display: flex;
+    flex-direction: column;
+}
+
+legend {
+    color: white;
+    font-family: "Klee One", 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.formInput {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem;
+}
+
+.formInput label {
+    color:white;
+    font-family: "Klee One", 'Trebuchet MS', sans-serif;
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0rem .5rem 1rem 1rem;
+    width: 25%;
+}
+
+.formInput input {
+    color:#535353;
+    font-family: "Courier Prime", Courier, monospace;
+    width: 50%;
+    padding: .25rem .25rem;
+    border: solid .2rem #f5bdc1;
+}
+
+.formInput input:focus {
+    border: solid .2rem #535353;
+}
+
+/*REQUIRED validation form component, 12/02/2024*/
+.formInput input:focus:invalid {
+    background-color: #ffb3b3;
+}
+
+select {
+    color:#535353;
+    font-family: "Courier Prime", Courier, monospace;
+    width: 50%;
+    padding: .25rem .25rem;
+    border: solid .2rem #f5bdc1;
+}
+
+#other {
+    color:#535353;
+    font-family: "Courier Prime", Courier, monospace;
+    width: 75%;
+    padding: 0.25rem .75rem 1.25rem 1.25rem;
+    border: solid .2rem #f5bdc1;
+    margin-top: 1rem;
+}
+
+#other:focus {
+    border: solid .2rem #535353;
+}
+
+#msg {
+    color:#535353;
+    font-family: "Courier Prime", Courier, monospace;
+    width: 50%;
+    padding: 0.25rem .75rem 1.25rem 1.25rem;
+    border: solid .2rem #f5bdc1;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+#msg:focus {
+    border: solid .2rem #535353;
+}
+
+#contactForm input[type=submit] {
+    font-family: "Courier Prime", Courier, monospace;
+    text-transform: lowercase;
+    color:#535353;
+    padding: 1rem 2rem;
+    background-color: #f5bdc1;  
+}
+#contactForm input[type=reset] {
+    font-family: "Courier Prime", Courier, monospace;
+    text-transform: lowercase;
+    color:#535353;
+    padding: 1rem 2rem;
+    background-color: #f5bdc1;  
+}
+
+.right h2 {
+    color: white;
+    text-align: center;
+    font-family: "Klee One", 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 2rem 2rem;
+}
+
+.rightContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    padding: 1rem 0rem 1rem 25%;
+}
+
+.rightContent a {
+    font-family: "Courier Prime", Courier, monospace;
+    text-transform: lowercase;
+    text-decoration: none;
+    color:white;
+}
+
+.rightContent p {
+    font-family: "Courier Prime", Courier, monospace;
+    text-transform: lowercase;
+    color:white;
+}
+
+.rightContent a:hover {
+    color:#d3b393;
+}
+
+.rightContent img {
+    display: block;
+    width: 5rem;
+    padding: 1rem;
+    border-radius: 25%;
+}
+
+#socialMessage {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-family: "Courier Prime", Courier, monospace;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+#contactSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
     width: 100%;
 }
-td {
-    text-align:left;
+
+.middle {
+    padding: 2rem;
+}
+
+.middle h2 {
+    font-size: 2rem;
+}
+
+.conInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    padding: 0;
+    background-color: #fadfe4;
+}
+
+.conInfo .left {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width:75%;
+}
+
+.conInfo .left img {
+   width: 35%;
+}
+
+.conLogo {
+    width: 100%;
     padding: 1rem;
 }
-tr:nth-child(1){
-    background-color: #ff9494;
-}
-tr:nth-child(2){
-    background-color: #a3ffb9;
-}
-tr:nth-child(3){
-    background-color: #fffac3;
-}
-tr:nth-child(4){
-    background-color: #ffc58e;
-}
-tr:nth-child(5){
-    background-color: #ffd4e6;
-}
-tr:nth-child(6){
-    background-color: #baf1ff;
-}
-footer {
-    background-color: #e4cdff;
-    color: #372544;
+
+.conInfo .left h3 {
+    color: #535353;
     text-align: center;
+    font-family: "Klee One", 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+
+.conInfo .left h4 {
+    color:#535353;
+    font-family: "Courier Prime", Courier, monospace;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.conInfo .left p {
+    color:#535353;
+    font-family: "Courier Prime", Courier, monospace;
+    font-weight: 500;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.conInfo .left a {
+    font-family: "Courier Prime", Courier, monospace;
+    text-transform: lowercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: #d3b393;
+    padding-bottom: 1rem;
+}
+.conInfo .left a:hover {
+    color:#535353;
+}
+
+.conInfo cite {
+    padding: 1rem 0rem;
+    font-family: "Courier Prime", Courier, monospace;
+    color:#535353;
+    font-size: 1rem;
+}
+
+.conInfo .right img {
+    width: 100%;
+}
+
+/****Con Page Styles*********/
+#upcoming {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 5rem 2rem 5rem 2rem;
+}
+
+#upcoming h3 {
+    font-family: "Courier Prime", Courier, monospace;
+    color:#535353;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+table {
+    font-family: "Courier Prime", Courier, monospace;
+    font-size: 1.5rem;
+    color:#535353;
+    width: 100%;
+    padding: 2rem;
+    font-weight: 700;
+    border-collapse: collapse;
+}
+
+table a {
+    text-decoration: none;
+    color: #d3b393;
+}
+
+table a:hover {
+    color: #535353;
+}
+
+table tr:nth-child(even){
+    background-color: #fadfe4;  
+}
+
+td, th {
+    border: 1px solid #f5bdc1;
     padding: 1rem;
-    margin-top: 2rem;
+    text-align: left;
+}
+
+th {
+    background-color: #535353;
+    color: white;
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 2rem 0 0 2rem;
+}
+
+td img {
+    width: 15%;
+    display: block;
+    float: left;
+}
+
+#mobile td img {
+    width:100%;
+    float:none;
+    padding-bottom: 2rem;
+}
+
+td small {
+    display: block;
+}
+
+td i {
+    display: block;
+    font-size: 1rem;
+}
+
+#mobile {
+    display: none;
+}
+
+#mobile td {
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+#mobile h4 {
+   padding: 2rem .5rem;
+   font-size: 1.5rem;
+}
+
+#mobile h5 {
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+#mobile p {
+    padding-bottom: 2rem;
+    color:#d3b393;
+}
+
+#conNearYou {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 5rem 2rem 5rem 2rem;
+}
+
+#conNearYou h2 {
+    font-family: "Klee One", 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+    color:#535353;
+    font-weight: 700;
+}
+
+#conNearYou p {
+    font-family: "Courier Prime", Courier, monospace;
+    font-size: 1.5rem;
+    color:#535353;
+    font-weight: 700;
+    padding-bottom: 3rem;
+}
+
+#conNearYou img {
+    width: 100%;
+    display: block;
+}
+
+#conNearYou .right {
+    display: block;
+}
+
+/**Character Page Styles**/
+
+#myCharacters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 5rem 2rem 5rem 2rem;
+}
+
+#myCharacters p {
+    font-family: "Courier Prime", Courier, monospace;
+    font-size: 1.5rem;
+    color:#535353;
+    font-weight: 700;
+    padding-bottom: 3rem;
+}
+
+/****************Footer Styles***************/
+
+footer {
+    position: relative;
+    bottom:0;
     width: 100vw;
-  }
+    background-color: #535353;
+    text-align: center;
+}
+
+#highlights {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem 2rem 0rem;
+    margin: 0;
+    border-bottom: .2rem solid white;
+    border-radius: 5px;
+}
+
+.highlightContent {
+    display: block;
+    width: 25%;
+}
+
+.highlightContent figcaption {
+    text-align: center;
+    color: white;
+    font-family: "Klee One", 'Trebuchet MS', sans-serif;
+    text-transform: lowercase;
+    font-size: 1rem;
+    padding: 0rem 3rem;
+}
+
+.highlightContent img {
+    width: 7.5rem;
+    padding-bottom: .5rem;
+}
+
+#bottomFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+#sketchBox {
+    display: block;
+    text-align: right;
+    width: 35%;   
+}
+
+#sketchBox img {
+    width: 75%;
+}
+
+#rightFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#signUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+#signUp label {
+    display: inline-block;
+    color: #f5bdc1;
+    font-family: "Klee One", 'Trebuchet MS', sans-serif;
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 0rem 5rem 2rem 5rem;
+}
+
+/*REQUIRED Border, 11/25/2024*/
+#signUp form input[type=email] {
+    font-family: "Courier Prime", Courier, monospace;
+    text-transform: lowercase;
+    width: 50%;
+    padding: 1rem 1rem;
+    border: solid .2rem #f5bdc1;
+}
+
+#signUp form input[type=email]:focus {
+    background-color: #f5bdc1;
+    border: none;
+}
+
+#signUp form input[type=submit] {
+    font-family: "Courier Prime", Courier, monospace;
+    text-transform: lowercase;
+    color:#535353;
+    padding: 1rem 2rem;
+    background-color: #f5bdc1;
+    
+}
+
+#socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#socials img {
+    display: block;
+    width: 5rem;
+    padding: 1rem;
+    border-radius: 25%;
+}
+
+#credits {
+    font-family: "Courier Prime", Courier, monospace;
+    text-transform: lowercase;
+    font-size: 1rem;
+    color:#f5bdc1;
+    padding: .5rem 0rem;
+}
+
+#credits a {
+    text-decoration: none;
+    color:white;
+}
+
+#credits a:hover {
+    color:#d3b393;
+}
+
+address {
+    padding-top: 2rem;
+    line-height: 1.75rem;
+}
+
+address div {
+    padding-top: 2rem;
+}
+
+/* Media Queries*/
+/*REQUIRED Media queries 11/25/2024*/
+
+@media only screen and (max-width:480px) {
+
+    /*REQUIRED dynamic navigation styling 11/25/2024*/
+
+    /*Nav dynamic styling*/
+
+    .navmenu {
+        flex-direction: column;
+    }
+
+    /*header dynamic styling*/
+
+    header {
+        padding: 1rem;
+    }
+
+    .info {
+    flex-direction: column-reverse;
+    }
+
+    .headerText {
+        width:100%;
+        padding: 1rem;
+    }
+
+    .headerText h1 {
+        font-size: 2.5rem;
+    }
+
+    .headerText p {
+        padding: 2rem 1rem;
+        font-size: 1.2rem;
+    }
+
+    .heroImage {
+        width: 100%;
+    }
+
+    .heroImage img {
+        width: 100%;
+    }
+
+    /*Main Dynamic Styling*/
+
+    #myStuff {
+        flex-direction: column;
+        padding: 3rem 1rem;
+    }
+
+    #myStuff section {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #myStuff section img {
+        width: 20rem;
+    }
+    /*Work dynamic styling*/
+
+    #myWork {
+        flex-direction: column;
+    }
+
+    #myWork section {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    /*Art dynamic styling*/
+
+    .galleryContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Web Design dynamic styling*/
+
+    #webContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*About dynamic styling*/
+#aboutInfo {
+    flex-direction: column-reverse;
+}
+
+#aboutInfo .left {
+    padding-top: 5rem;
+}
+
+#aboutInfo img {
+    width: 100%;
+}
+
+  .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+    
+      .lft::after, .rght::after {
+        left: 15px;
+      }
+      .rght {
+        left: 0%;
+      }
+
+      #moreAbout {
+        flex-direction: column;
+      }
+
+      #moreAbout .left {
+        padding: 0rem;
+      }
+
+    /*Contact dynamic styling*/
+
+    #contactInfo {
+        padding: 0rem;
+    }
+
+    #contactMain {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .rightContent {
+        padding: 1rem 0rem;
+    }
+
+    .middle {
+        padding: 0;
+    }
+
+    .conInfo {
+        flex-direction: column-reverse;
+    }
+
+    .conInfo .left {
+        width:100%;
+        padding: 1rem;
+    }
+
+    .conInfo .left img {
+        width: 100%;
+    }
+
+    .conInfo .left h3 {
+        font-size: 1.7rem;
+    }
+
+    /*Convention dynamic styling*/
+
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #upcoming {
+        padding-bottom: 2rem;
+    }
+
+    #conNearYou {
+        flex-direction: column-reverse;
+    }
+
+    #conNearYou .right {
+        padding-bottom: 2rem;
+    }
+
+    /*Footer dynamic styling*/
+    #highlights {
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    .highlightContent img {
+        width: 4.5rem;
+    }
+
+    .highlightContent figcaption {
+        padding: 0;
+        font-size: .75rem;
+    }
+
+    #bottomFooter {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 2rem 2rem;
+    }
+    #sketchBox {
+        width: 100%;
+        text-align: center;
+    }
+
+    #rightFooter {
+        width: 100%;
+    }
+
+    #signUp label {
+        padding: 2rem 0rem;
+        font-size: 1rem;
+    }
+    #credits {
+        font-size: .7rem;
+    }
+
+}
+
+@media only screen and (min-width: 481px) {
+
+    .navmenu {
+        flex-direction: row;
+    }
+
+    #desktop {
+        display: block;
+    }
+}

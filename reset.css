@@ -1,0 +1,35 @@
+/*
+    CSS Reset Stylesheet
+    Erin Chacon, Final Project
+    CIS233DA, Fall 2024
+*/
+
+/* Basic Styling/ defaults*/
+
+/*REQUIRED reset styles, 11/25/2024*/
+
+article, aside, blockquote, body, cite, div, figcaption, figure, footer, h1, h2, h3, h4, h5, h6, header, img, li, main, nav, nav a, ol, p, section, span, ul, table {
+    background: transparent;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+article, aside, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+nav ul {
+    list-style: none;
+    list-style-image: none;
+}
+
+nav a {
+    text-decoration: none;
+}
